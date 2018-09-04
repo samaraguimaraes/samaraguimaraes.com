@@ -18,7 +18,7 @@ last_updated: # leave blank if you don't want to display last updated
 # -----------------------------------------------------------------------------
 github_username: # your GitHub user name
 twitter_username: sam_guimaraes # your Twitter handle
-linkedin_username: "samara-guimarães-8256a52a" # your LinkedIn user name
+linkedin_username: "samaraguimaraes" # your LinkedIn user name
 scholar_userid: "9Y3oTzQAAAAJ" # your Google Scholar ID
 orcid_id: # your ORCID ID
 academia_url: https://birmingham.academia.edu/SamaraGuimarães
@@ -76,7 +76,7 @@ highlighter: pygments
 
 # Includes & excludes
 include: ['_pages']
-exclude: [vendor]
+exclude: ['vendor']
 
 # Plug-ins
 plugins:
