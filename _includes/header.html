@@ -22,18 +22,18 @@
         </label>
 
       <div class="trigger">
-        <!-- About -->
-        <a class="page-link" href="{{ site.baseurl | prepend: site.url }}/">about</a>
-
+        {% if site.blog_url %}
         <!-- Blog -->
-        <a class="page-link" href="{{ '/blog/' | prepend: site.baseurl | prepend: site.url }}">blog</a>
+        <a class="page-link" href="{{ site.blog_url }}" target="_blank">blog</a>
+        {% endif %}
 
-        <!-- Pages -->
-        {% for page in site.pages %}
-          {% if page.title and page.url != "/" %}
-            <a class="page-link" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}">{{ page.title }}</a>
-          {% endif %}
-        {% endfor %}
+        <!-- Academia-->
+        <a class="page-link" href="{{ site.academia_url }}" target="_blank">publications</a>
+
+        {% if site.lattes_id %}
+        <!-- CNPQ Lattes-->
+        <a class="page-link" href="http://lattes.cnpq.br/{{ site.lattes_id }}" target="_blank">lattes</a>
+        {% endif %}
 
         <!-- CV link -->
         <!-- <a class="page-link" href="{{ '/assets/pdf/CV.pdf' | prepend: site.baseurl | prepend: site.url }}">vitae</a> -->
